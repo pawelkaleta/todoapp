@@ -19,13 +19,13 @@ public interface UserDAO {
     void saveUser(User user);
      
     /**
-     * Get raw list of all User from db
+     * Get raw list of all Users from db
      * @return List of Users
      */
     List<User> findAllUsers();
      
     /**
-     * Delete User from db that ID's is equal to param
+     * Delete User from db, which ID's is equal to param
      * @param id User's id to delete
      */
     void deleteUserById(int id);

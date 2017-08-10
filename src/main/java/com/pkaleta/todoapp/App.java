@@ -7,6 +7,7 @@ import org.springframework.context.support.AbstractApplicationContext;
 
 import com.pkaleta.todoapp.cfg.AppConfig;
 import com.pkaleta.todoapp.model.User;
+import com.pkaleta.todoapp.service.ProjectTaskService;
 import com.pkaleta.todoapp.service.UserService;
 
 /**
@@ -23,7 +24,7 @@ public class App
     	 
     	 
          UserService userService = (UserService) context.getBean("userService");
-         
+         ProjectTaskService projectTaskService = (ProjectTaskService) context.getBean("projectTaskService");
          /*
           * Create User1
           */
